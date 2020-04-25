@@ -9,13 +9,13 @@ $sql = "CREATE TABLE  IF NOT EXISTS Admins (
     email VARCHAR(50) PRIMARY KEY,
     fname VARCHAR(50) NOT NULL,
     pass VARCHAR(30) NOT Null,
-    stat VARCHAR(30) NOT Null
+    stat VARCHAR(30) DEFAULT 'Active'
     );";
 $sql .= "CREATE TABLE  IF NOT EXISTS Assistants (
     email VARCHAR(50) PRIMARY KEY,
     fname VARCHAR(50) NOT NULL,
     pass VARCHAR(30) NOT Null,
-    stat VARCHAR(30) NOT Null
+    stat VARCHAR(30) DEFAULT 'Active'
     );";
 $sql .= "CREATE TABLE  IF NOT EXISTS Locations (
     lname VARCHAR(50) PRIMARY KEY,
@@ -28,10 +28,8 @@ $sql .= "CREATE TABLE  IF NOT EXISTS Tours (
     )";
 
 if ($conn->multi_query($sql) === TRUE) {
-    echo "Tables created successfully";
-} else {
-    echo "Error creating table: " . $conn->error;
-}
+
+} 
 
 CloseCon($conn);
 }
