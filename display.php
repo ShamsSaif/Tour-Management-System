@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-	<title> All Locations </title>
+	<title> Display Current Locations </title>
 </head>
 
 
