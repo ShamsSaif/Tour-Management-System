@@ -58,8 +58,7 @@ div {
       <table>		
 		<tr>
 		<td>ID</td>
-		<td><input type="text" name="location_id" size="10" maxlength="4"></td>
-		</tr>
+		<td><input type="text" name="location_id" size="10" maxlength="4">
         <tr>
           <td>Name</td>
           <td><input type="text" name="location_name" size="35" maxlength="80"></td>
