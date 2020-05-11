@@ -54,12 +54,12 @@ div {
 	<tr>
           <td>Description</td>
           <td><textarea type="text" class="textbox" cols="50" rows="5" name="location_description" size="200" maxlength="850"></textarea>
-</table>
 
-<div id="row">
-		<input type="submit" name="submit" value="Add"/>
-		<input type="reset" value="Clear" />
-	</div>	
-</form>
+   <div id="row">
+	  <input type="submit" name="submit" value="Add"/>
+	  input type="reset" value="Clear" />
+       </div>	
+  </form>
 </div>
+</table>
 </body>
