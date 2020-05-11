@@ -46,7 +46,6 @@ div {
 .td{border-width:2px; border-style:solid; font-size:20px}
 }
 </style>
-</head>
 <div align="center" >	
 <b>Type New Location Information</b>
 <form enctype="multipart/form-data" method="post" action="display.php">
@@ -67,12 +66,7 @@ div {
         </tr>
 		<tr>
           <td>Description</td>
-          <td><textarea type="text" class="textbox" cols="50" rows="5" name="location_description" size="200" maxlength="850"></textarea></td>
-        </tr>
-		<tr>
-		  </td>
-		  </tr>
-		</table>
+          <td><textarea type="text" class="textbox" cols="50" rows="5" name="location_description" size="200" maxlength="850"></textarea> 
       </td>
     </tr>
 </table>
