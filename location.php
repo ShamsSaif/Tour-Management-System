@@ -17,7 +17,7 @@
 
 <title>Locations</title>
 <link href = "style.css" rel="stylesheet" type="text/css"/>
-</head>
+
 
 <header style="width:100%; height:150px; text-align:center; align:center; font-family: 'Oswald', sans-serif; color:BLACK">
 
@@ -29,7 +29,7 @@
 </tr>
 </table>
 </div>
-</html>
+
 
 <!DOCTYPE html>
 <html>
