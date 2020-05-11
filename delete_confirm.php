@@ -4,12 +4,11 @@
 </head>
 
 <?php
-include('includes/footer.php');
-include('includes/nav.php');	
+
 	require_once('connect.php');
 	
-	$LocationID= $_POST['LocationID'];
-	$query = "select * from location where locationID = $locationID";
+	$id = $_POST['id'];
+	$query = "select * from tours where tourName = $tourName";
 	$result = mysqli_query($connection, $query);
 	$row = mysqli_fetch_array($result);
 	
@@ -18,14 +17,15 @@ include('includes/nav.php');
 	echo '<h3> Are you sure you want to delete this record?</h3>';
 	
 	
-	echo '<p>Location ID : ' . $row['LocationID'] . '<p>';
-	echo '<p>Location Name: ' . $row['LocationName'] . '<p>';
+	echo '<p>ID: ' . $row['id'] . '<p>';
+	echo '<p>Tour Name: ' . $row['tourName'] . '<p>';
 	echo '<p>Description: ' . $row['Description'] . '<p>';
+
 	
 	
 	echo '<p>';
 	echo "<a href='delete_confirm.php'>Cancel</a>";
-	echo "<a href='delete.php?LocationName={$row['LocationID']}'>Delete</a>";
+	echo "<a href='delete.php?tourName={$row['tourName']}'>Delete</a>";
 	echo '</p>';
 	
 echo '</section>';
