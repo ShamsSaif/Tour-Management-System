@@ -51,13 +51,9 @@ div {
         <tr>
           <td>Name</td>
           <td><input type="text" name="location_name" size="35" maxlength="80">
-        </tr>
-		<tr>
+	<tr>
           <td>Description</td>
           <td><textarea type="text" class="textbox" cols="50" rows="5" name="location_description" size="200" maxlength="850"></textarea>
-        </tr>
-      </td>
-    </tr>
 </table>
 
 <div id="row">
