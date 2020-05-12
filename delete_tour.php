@@ -6,7 +6,7 @@
 	
 		$tourName = $_GET['$tourName'];
 		
-		$query = "delete from tours where tourName = '$tourName'";
+		$query = "delete from tour where tourName = '$tourName'";
 		
 			if (mysqli_query($connection, $query)) {
 			echo "<p>Record {$tourName} has been deleted"; 
