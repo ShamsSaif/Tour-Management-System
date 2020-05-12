@@ -8,7 +8,7 @@
 	require_once('connect.php');
 	
 	$id = $_POST['id'];
-	$query = "select * from tours where tourName = $tourName";
+	$query = "select * from tour where tourName = $tourName";
 	$result = mysqli_query($connection, $query);
 	$row = mysqli_fetch_array($result);
 	
