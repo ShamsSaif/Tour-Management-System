@@ -25,7 +25,7 @@ require_once('connect.php');
 	
 <?php
 		foreach($row as $next) {
-		echo "<option value='".$next['id']."'>".$next['LocationName']."</option>";
+		echo "<option value='".$next['id']."'>".$next['locationName']."</option>";
 		}	
 ?>
 		
