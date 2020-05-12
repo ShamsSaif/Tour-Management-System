@@ -6,9 +6,9 @@ $connection = mysqli_connect("localhost", "root", ""); // Establishing Connectio
 
 if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
 
-$id = $_POST['LocationID'];
-$name = $_POST['LocationName'];
-$description = $_POST['Description'];
+$id = $_POST['id'];
+$name = $_POST['name'];
+$description = $_POST['description'];
 
 
 if($id !=''||$name !='' ||$description !='')    {
@@ -16,7 +16,7 @@ if($id !=''||$name !='' ||$description !='')    {
 	
 //Insert Query of SQL
 
-$query = mysql_query("INSERT INTO locations (LocationID, LocationName, Description) values ('$id', '$name','$description')");
+$query = mysql_query("INSERT INTO locations (id, locationName, description) values ('$id', '$name','$description')");
 			
 echo "<br/><br/><span>Data Inserted successfully...!!</span>";
 }
