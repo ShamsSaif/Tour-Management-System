@@ -14,9 +14,9 @@ $result = mysqli_query($connection, $query);
 
 $row = mysqli_fetch_array($result);
 
-$ID = $row['id'];
-$ProductName = $row['locationName'];
-$Description = $row['description'];
+$id = $row['id'];
+$locationName = $row['locationName'];
+$description = $row['description'];
 
 ?>
 
