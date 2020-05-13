@@ -6,13 +6,15 @@ function createTables(){
 
 // sql to create tables
 $sql = "CREATE TABLE  IF NOT EXISTS Admins (
-    email VARCHAR(50) PRIMARY KEY,
+    admin_id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(50) NOT NULL UNIQUE,
     fname VARCHAR(50) NOT NULL,
     pass VARCHAR(30) NOT Null,
     stat VARCHAR(30) DEFAULT 'Active'
     );";
 $sql .= "CREATE TABLE  IF NOT EXISTS Assistants (
-    email VARCHAR(50) PRIMARY KEY,
+    ast_id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(50) NOT NULL UNIQUE,
     fname VARCHAR(50) NOT NULL,
     pass VARCHAR(30) NOT Null,
     stat VARCHAR(30) DEFAULT 'Active'
@@ -22,7 +24,8 @@ $sql .= "CREATE TABLE  IF NOT EXISTS Locations (
     coord VARCHAR(50) NOT Null
     );";
 $sql .= "CREATE TABLE  IF NOT EXISTS Tours (
-    tname VARCHAR(50) PRIMARY KEY,
+    t_id INT PRIMARY KEY AUTO_INCREMENT,
+    tname VARCHAR(50) NOT NULL,
     locs VARCHAR(100) NOT Null,
     category VARCHAR(50)
     )";
