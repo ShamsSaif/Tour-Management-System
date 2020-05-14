@@ -21,11 +21,8 @@ $description = $row['description'];
 ?>
 
 <fieldset>
-	
 <h3>Update Post</h3>
-	
-<!--html form to ADD LOCATIONS to our LIST-->
-	
+
 <form method="post" action="update.php" enctype="multipart/form-data">
 
 <input type="hidden" name="ID" maxlength="4"   value=" <?php echo $ID?> " />
@@ -33,7 +30,7 @@ $description = $row['description'];
 
 <div class="row">
 	<label for="location_name">Location Name</label>
-	<input type="text" name="productName" maxlength="20" value=" <?php echo $Location Name ?>" />
+	<input type="text" name="productName" maxlength="20" value=" <?php echo $ProductName ?>" />
 </div>
 
 <div class="row">

@@ -47,11 +47,11 @@ CloseCon($conn);
 
 <!DOCTYPE html>
 
-<body>
+<body style="padding-left:500px;">
     <h2>Login</h2>
     <form method="post">
 
-        <div class="container">
+        <div class="container" >
             <select name="priv">
                 <option value="Admins">Admin</option>
                 <option value="Assistants">Assistant</option>
