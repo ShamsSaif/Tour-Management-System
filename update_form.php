@@ -21,8 +21,11 @@ $description = $row['description'];
 ?>
 
 <fieldset>
+	
 <h3>Update Post</h3>
-
+	
+<!--html form to ADD LOCATIONS to our LIST-->
+	
 <form method="post" action="update.php" enctype="multipart/form-data">
 
 <input type="hidden" name="ID" maxlength="4"   value=" <?php echo $ID?> " />
