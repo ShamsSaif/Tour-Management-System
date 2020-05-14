@@ -42,8 +42,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
 while($row = $result->fetch_assoc()) {
-echo "<tr><td width='200px'>" . $row["email"]. "</td><td width='300px'>" . $row["fname"] . "</td><td width='100px'>"
-. $row["stat"]. "</td> <td width='100px'><a href='remove_admin.php?ast_id=" . $row["ast_id"] . "'>  Delete</a></td></tr>";
+echo "<tr><td width='200px'>" . $row["email"]. "</td><td width='300px'>" . htmlspecialchars( $row["fname"]) . "</td><td width='100px'>"
+. $row["stat"]. "</td> <td width='100px'><a href='remove_admin.php?ast_id=" . $row["ast_id"] . "' onClick='return confirm(\" Are you sure you want to delete ?\")'>  Delete</a></td></tr>";
 }
 
 } else { echo "0 results"; }
@@ -69,8 +69,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
 while($row = $result->fetch_assoc()) {
-echo "<tr><td width='200px'>" . $row["tname"]. "</td><td width='300px'>" . $row["locs"] . "</td><td width='100px'>"
-. $row["category"]. "</td> <td width='100px'><a href='edit_location.php?t_id=" . $row["t_id"] . "'>  Edit</a></td></tr>";
+echo "<tr><td width='200px'>" . $row["tname"]. "</td><td width='300px'>" . htmlspecialchars($row["locs"]) . "</td><td width='100px'>"
+. $row["category"]. "</td> <td width='100px'><a href='edit_location.php?t_id=" . $row["t_id"] . "' >  Edit</a></td></tr>";
 }
 
 } else { echo "0 results"; }
@@ -79,8 +79,5 @@ $conn->close();
 </table>
 
 </body>
-
-
-
 
 </html>
