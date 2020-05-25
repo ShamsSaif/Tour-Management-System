@@ -74,7 +74,7 @@ ul.menuitem2 li a:hover {
 
 #nav ul li {
 	display: inline;
-	padding: 0 15px 0 15px;
+	padding: 0 65px 0 35px;
 }
 
 #nav ul li.first {
@@ -129,7 +129,3 @@ nav ul li {
 
     li{border-right:black solid 2px;
 }
- 
-
-
-
