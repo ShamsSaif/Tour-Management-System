@@ -20,7 +20,8 @@ $sql .= "CREATE TABLE  IF NOT EXISTS Assistants (
     stat VARCHAR(30) DEFAULT 'Active'
     );";
 $sql .= "CREATE TABLE  IF NOT EXISTS Locations (
-    lname VARCHAR(50) PRIMARY KEY,
+    locs_id INT PRIMARY KEY AUTO_INCREMENT,
+    lname VARCHAR(50) NOT NULL,
     coord VARCHAR(50) NOT Null
     );";
 $sql .= "CREATE TABLE  IF NOT EXISTS Tours (

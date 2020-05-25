@@ -6,8 +6,10 @@ createTables();
 $conn = OpenCon();
 
 if(isset($_POST['locationName'])) {
-	$locationId = $_POST['locationId'];
-	$sql = "UPDATE Tours SET locs='".$_POST['locationName']."', category = '".$_POST['category']."', tname='".$_POST['tname']."' WHERE t_id = ". $locationId;
+	$locationName = $_POST['locationName'];
+	$coordinate = $_POST['coordinate'];
+	
+	$sql = "INSERT INTO locations(lname, coord) VALUES('".$locationName ."', '".$coordinate."') ";
 	
     $result = $conn->query($sql);
 	
@@ -25,8 +27,6 @@ if( isset( $_GET['t_id'])){
 		while($row = $result->fetch_assoc()) {
             $location = $row['locs'];
 			$locationId = $row['t_id'];
-			$tname = $row['tname'];
-			$category = $row['category'];
 		}
 
 	} 
@@ -40,34 +40,28 @@ CloseCon($conn);
 <!DOCTYPE html>
 
 <body style="padding-left:500px;">
-    <h2>Edit Tour: </h2>
-    <form method="post" action="edit_location.php">
+    <h2>add new Location: </h2>
+    <form method="post" action="add_location.php">
          
 		 <table>
 		     <tr>
-			    <td> Tour Name:  </td>
-				<td> 
-				    <input type="text" name="tname" value="<?php echo $tname; ?>">
-			    </td>
-			 </tr>
-		     <tr>
 			    <td> Location Name:  </td>
 				<td> 
-				    <input type="hidden" name="locationId" value="<?php echo $locationId; ?>">
-				    <input type="text" name="locationName" value="<?php echo $location; ?>">
+				    <input type="text" name="locationName" value="">
 			    </td>
 			 </tr>
 		     <tr>
-			    <td> Category:  </td>
+			    <td> Coordinate:  </td>
 				<td> 
-				    <input type="text" name="category" value="<?php echo $category; ?>">
+				    <input type="text" name="coordinate" value="">
 			    </td>
 			 </tr>
+
 			 <tr style="height: 50px;">
 			   <td></td><td></td>
 			 </tr>
 			 <tr>
-			     <td></td><td><input type="submit" value="Update"></td>
+			     <td></td><td><input type="submit" value="Save"></td>
 			 </tr>
 		 
 		 </table>

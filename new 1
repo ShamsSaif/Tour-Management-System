@@ -1,0 +1,49 @@
+
+
+Edit : 4 files
+
+add  : 2 files
+
+
+
+Unit Test: While testing with edit locations & add assistant, we saw that we can add html tag, like (<input type="text">)
+Solution: we fixed it.
+
+
+As a Admin, I want to add new locations.
+As a Admin, I want to edit existing locations.
+As a Admin, I want to delete existing locations which is not used in tour.
+
+As a Admin, I want to add new tour.
+As a Admin, I want to edit existing tour.
+
+
+DB Design:  It was not good [we changed/added Primary key]
+
+
+develop code :  This part is not also good.
+
+
+Unit testing: 
+Testing: Unit testing/ feature testing/ regression/ module testing/ 
+
+INSERT INTO <TABLENAME> VALUES (<VALUES1>, )
+
+UPDATE <TABLENAME>
+SET <COLUMNNAME> = VALUE
+WHERE CONDITION
+
+DELETE FROM <TABLENAME>
+WHERE CONDITION
+
+
+Why is “||” the symbol for or? [closed]
+
+Are you ther ?esy
+
+yes
+
+Do you understand ?
+tell me the basic steps what u did the main points plz
+
+ok got it
