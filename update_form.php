@@ -30,7 +30,7 @@ $description = $row['description'];
 
 <div class="row">
 	<label for="location_name">Location Name</label>
-	<input type="text" name="productName" maxlength="20" value=" <?php echo $ProductName ?>" />
+	<input type="text" name="locationName" maxlength="20" value=" <?php echo $locationName ?>" />
 </div>
 
 <div class="row">
