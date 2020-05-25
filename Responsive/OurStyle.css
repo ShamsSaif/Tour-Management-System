@@ -9,6 +9,10 @@ body {
 	padding: 90px 0;
 	height: 80px;
 	width: 180px;
+	background-color:black; 
+	text-align:center;
+	font-family: 'Oswald', sans-serif; 
+	color:white;
 }
 
 
