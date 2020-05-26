@@ -37,7 +37,7 @@ div {
 </style>
 <div align="center" >	
 <b>Type New Location Information</b>
-<form enctype="multipart/form-data" method="post" action="display.php">
+<form enctype="multipart/form-data" method="post" action="displayALL.php">
 <table border="1">
   <tr>
      <td align="center">Add New Location Details on Database</td>
